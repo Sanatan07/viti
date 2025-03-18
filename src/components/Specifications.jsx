@@ -3,16 +3,16 @@ import './Specifications.css'; // Import a CSS file for styling
 
 const Specifications = () => {
   return (
-    <div id="specifications" className="py-16 bg-gray-100">
+    <div id="specifications" className="py-8 md:py-16 bg-gray-100">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12">SPECIFICATIONS</h2>
+        <h2 className="text-2xl md:text-3xl font-bold text-center mb-6 md:mb-12">SPECIFICATIONS</h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
           {/* Structure */}
-          <div className="bg-white p-6 rounded-lg">
+          <div className="bg-white p-4 md:p-6 rounded-lg shadow-sm">
             <div className="flex items-center mb-4">
-              <img src="./src/assets/images/Structure-icon.png" alt="Structure Icon" className="w-12 h-12 mr-4" />
-              <h3 className="text-xl font-bold">Structure</h3>
+              <img src="./src/assets/images/Structure-icon.png" alt="Structure Icon" className="w-10 md:w-12 h-10 md:h-12 mr-4" />
+              <h3 className="text-lg md:text-xl font-bold">Structure</h3>
             </div>
             <ul className="space-y-2">
               <li>• RCC structure</li>
@@ -20,10 +20,10 @@ const Specifications = () => {
           </div>
           
           {/* Toilets */}
-          <div className="bg-white p-6 rounded-lg">
+          <div className="bg-white p-4 md:p-6 rounded-lg shadow-sm">
             <div className="flex items-center mb-4">
               <img src="./src/assets/images/Toilets-icon.png" alt="Toilets Icon" className="w-8 h-8 mr-4" />
-              <h3 className="text-xl font-bold">Toilets</h3>
+              <h3 className="text-lg md:text-xl font-bold">Toilets</h3>
             </div>
             <ul className="space-y-2">
               <li>• Ceramic flooring and dado up to 7 ft. height</li>
@@ -34,10 +34,10 @@ const Specifications = () => {
           </div>
           
           {/* Flooring */}
-          <div className="bg-white p-6 rounded-lg">
+          <div className="bg-white p-4 md:p-6 rounded-lg shadow-sm">
             <div className="flex items-center mb-4">
               <img src="./src/assets/images/Flooring-icon.png" alt="Flooring Icon" className="w-8 h-8 mr-4" />
-              <h3 className="text-xl font-bold">Flooring</h3>
+              <h3 className="text-lg md:text-xl font-bold">Flooring</h3>
             </div>
             <ul className="space-y-2">
               <li>• Vitrified tiles in all rooms</li>
@@ -46,10 +46,10 @@ const Specifications = () => {
           </div>
           
           {/* Kitchen + Utility Area */}
-          <div className="bg-white p-6 rounded-lg">
+          <div className="bg-white p-4 md:p-6 rounded-lg shadow-sm">
             <div className="flex items-center mb-4">
               <img src="./src/assets/images/Kitchen-icon.png" alt="Kitchen Icon" className="w-8 h-8 mr-4" />
-              <h3 className="text-xl font-bold">Kitchen + Utility Area</h3>
+              <h3 className="text-lg md:text-xl font-bold">Kitchen + Utility Area</h3>
             </div>
             <ul className="space-y-2">
               <li>• Granite platform with SS Sink</li>

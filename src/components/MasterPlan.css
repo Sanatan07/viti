@@ -1,0 +1,272 @@
+/* MasterPlan.css */
+
+/* Basic sizing and spacing */
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.bg-gray-100 {
+  background-color: #f5f5f5;
+}
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Typography */
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+/* Margins */
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+/* Flex and Grid */
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.gap-6 {
+  gap: 1.5rem;
+}
+
+/* Order for stacking on mobile */
+.order-1 {
+  order: 1;
+}
+
+.order-2 {
+  order: 2;
+}
+
+/* Spacing */
+.space-y-4 > * + * {
+  margin-top: 1rem;
+}
+
+/* Lists */
+.list-disc {
+  list-style-type: disc;
+}
+
+.pl-5 {
+  padding-left: 1.25rem;
+}
+
+/* Image container */
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-auto {
+  height: auto;
+}
+
+/* Modal styles */
+.fixed {
+  position: fixed;
+}
+
+.inset-0 {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+.bg-opacity-80 {
+  --bg-opacity: 0.8;
+}
+
+.z-50 {
+  z-index: 50;
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.relative {
+  position: relative;
+}
+
+.max-w-4xl {
+  max-width: 56rem;
+}
+
+.max-h-\[90vh\] {
+  max-height: 90vh;
+}
+
+.max-w-full {
+  max-width: 100%;
+}
+
+.max-h-\[85vh\] {
+  max-height: 85vh;
+}
+
+.object-contain {
+  object-fit: contain;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.-top-10 {
+  top: -2.5rem;
+}
+
+.-right-10 {
+  right: -2.5rem;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.w-10 {
+  width: 2.5rem;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+/* Media queries for responsive design */
+@media (min-width: 768px) {
+  .md\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+  
+  .md\:mb-12 {
+    margin-bottom: 3rem;
+  }
+  
+  .md\:grid {
+    display: grid;
+  }
+  
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  
+  .md\:gap-8 {
+    gap: 2rem;
+  }
+  
+  .md\:order-none {
+    order: 0;
+  }
+  
+  .md\:mt-6 {
+    margin-top: 1.5rem;
+  }
+  
+  .md\:cursor-pointer {
+    cursor: pointer;
+  }
+  
+  .md\:space-y-6 > * + * {
+    margin-top: 1.5rem;
+  }
+  
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+  
+  .md\:text-left {
+    text-align: left;
+  }
+  
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}

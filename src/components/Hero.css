@@ -1,129 +1,211 @@
-/* Hero.css */
+/* General Styles */
 .h-screen {
-    height: 100vh;
-  }
-  
-  .relative {
-    position: relative;
-  }
-  
-  .absolute {
-    position: absolute;
-  }
-  
-  .inset-0 {
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  }
-  
-  .bg-black {
-    background-color: #000;
-  }
-  
-  .opacity-40 {
-    opacity: 0.4;
-  }
-  
-  .flex {
-    display: flex;
-  }
-  
-  .flex-col {
-    flex-direction: column;
-  }
-  
-  .justify-center {
-    justify-content: center;
-  }
-  
-  .items-center {
-    align-items: center;
-  }
-  
-  .text-white {
-    color: #fff;
-  }
-  
-  .px-4 {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-  
+  height: 100vh;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.inset-0 {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+.opacity-40 {
+  opacity: 0.4;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.md\:text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.md\:text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.max-w-2xl {
+  max-width: 32rem;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
+.text-black {
+  color: #000;
+}
+
+/* Additional styles for the slideshow */
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.hero-image:not(.active) {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-image.active {
+  opacity: 1;
+}
+
+/* Styles for the hero content */
+.hero-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem;
+  text-align: center;
+  z-index: 10; /* Ensure the content is above the slideshow */
+  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+}
+
+/* Responsive Design */
+/* Mobile Devices */
+@media screen and (max-width: 768px) {
   .text-5xl {
-    font-size: 3rem;
-    line-height: 1;
+    font-size: 2rem;
   }
-  
+
   .md\:text-7xl {
-    font-size: 4.5rem;
-    line-height: 1;
+    font-size: 3rem;
   }
-  
-  .font-bold {
-    font-weight: 700;
+
+  .text-xl {
+    font-size: 1rem;
   }
-  
-  .mb-4 {
+
+  .md\:text-2xl {
+    font-size: 1.25rem;
+  }
+
+  .mb-8 {
     margin-bottom: 1rem;
   }
-  
+}
+
+/* Tablet Devices */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .text-5xl {
+    font-size: 2.5rem;
+  }
+
+  .md\:text-7xl {
+    font-size: 3.5rem;
+  }
+
+  .text-xl {
+    font-size: 1.125rem;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.375rem;
+  }
+
+  .mb-8 {
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Desktop Devices */
+@media screen and (min-width: 1025px) {
+  .text-5xl {
+    font-size: 3rem;
+  }
+
+  .md\:text-7xl {
+    font-size: 4.5rem;
+  }
+
   .text-xl {
     font-size: 1.25rem;
-    line-height: 1.75rem;
   }
-  
+
   .md\:text-2xl {
     font-size: 1.5rem;
-    line-height: 2rem;
   }
-  
+
   .mb-8 {
     margin-bottom: 2rem;
   }
-  
-  .text-center {
-    text-align: center;
-  }
-  
-  .max-w-2xl {
-    max-width: 32rem;
-  }
-  
-  .bg-white {
-    background-color: #fff;
-  }
-  
-  .p-4 {
-    padding: 1rem;
-  }
-  
-  .rounded-md {
-    border-radius: 0.375rem;
-  }
-  
-  .text-black {
-    color: #000;
-  }
-  
-  /* Additional styles for the slideshow */
-  .hero-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: opacity 0.5s ease-in-out;
-  }
-  
-  .hero-image:not(.active) {
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .hero-image.active {
-    opacity: 1;
-  }
+}

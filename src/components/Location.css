@@ -1,0 +1,27 @@
+/* Location.css */
+#location .container {
+    max-width: 100%;
+  }
+  
+  #location .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    #location .grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .map-container {
+      height: 400px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .map-container {
+      height: 300px;
+    }
+  }
+  
