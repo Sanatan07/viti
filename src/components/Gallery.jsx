@@ -1,12 +1,17 @@
 import React from 'react';
+import gallary1 from '../../public/images/gallary1.webp';
+import gallary2 from '../../public/images/gallary2.webp';
+import gallary4 from '../../public/images/gallary4.webp';
+import gallary5 from '../../public/images/gallary5.webp';
 
 const Gallery = () => {
   // Image URLs
   const images = [
-    './src/assets/images/gallary1.webp',
-    './src/assets/images/gallary2.webp',
-    './src/assets/images/gallary4.webp',
-    './src/assets/images/gallary5.webp',
+    gallary1,
+    gallary2,
+    gallary4,
+    gallary5
+
   ];
 
   // YouTube video information

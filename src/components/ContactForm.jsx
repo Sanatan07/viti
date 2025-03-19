@@ -4,7 +4,8 @@ const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
-    email: ''
+    email: '',
+    message:''
   });
   
   const [status, setStatus] = useState({
@@ -26,8 +27,8 @@ const ContactForm = () => {
     setStatus({ submitting: true, submitted: false, error: null });
 
     try {
-      // Replace with your API endpoint
-      const response = await fetch('YOUR_API_ENDPOINT', {
+      // API endpoint updated with your provided URL
+      const response = await fetch('https://p7hjkeqa74.execute-api.eu-north-1.amazonaws.com/prod/contactform', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -40,7 +41,7 @@ const ContactForm = () => {
       }
 
       setStatus({ submitting: false, submitted: true, error: null });
-      setFormData({ name: '', phone: '', email: '' });
+      setFormData({ name: '', phone: '', email: '', message: '' });
     } catch (error) {
       console.error('Error submitting form:', error);
       setStatus({ submitting: false, submitted: false, error: error.message });
@@ -98,6 +99,17 @@ const ContactForm = () => {
                 value={formData.email}
                 onChange={handleChange}
                 placeholder="Email"
+                required
+                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+            </div>
+            <div>
+              <input
+                type="text"
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                placeholder="Message"
                 required
                 className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
               />

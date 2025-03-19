@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import './MasterPlan.css'; // Import your CSS file for styling
+import './MasterPlan.css'; // Import your CSS file for styling\
+import master1 from '../../public/images/masterplan.webp';
 
 const MasterPlan = () => {
   const [showEnlarged, setShowEnlarged] = useState(false);
   
   // Placeholder image path - replace with your actual master plan image
-  const masterPlanImage = "./src/assets/images/masterplan.webp";
+  const masterPlanImage = master1;
   
   const handleImageClick = () => {
     // Only trigger on desktop

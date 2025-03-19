@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from 'react';
+import hero1 from '../../public/images/viti-main1.webp';
+import hero2 from '../../public/images/viti-main2.webp';
+import hero3 from '../../public/images/viti-main3.webp'
 import './Hero.css'; // Import your CSS file for styling
 
 const Hero = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const images = [
-    './src/assets/images/viti-main1.webp',
-    './src/assets/images/viti-main2.webp',
-    './src/assets/images/viti-main3.webp'
+    hero1,
+    hero2, 
+    hero3
   ];
 
   useEffect(() => {

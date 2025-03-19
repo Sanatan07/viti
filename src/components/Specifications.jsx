@@ -1,5 +1,9 @@
 import React from 'react';
 import './Specifications.css'; // Import a CSS file for styling
+import spec1 from "../../public/images/Structure-icon.png";
+import spec2 from "../../public/images/Toilets-icon.png";
+import spec3 from "../../public/images/Flooring-icon.png";
+import spec4 from "../../public/images/Kitchen-icon.png";
 
 const Specifications = () => {
   return (
@@ -11,7 +15,7 @@ const Specifications = () => {
           {/* Structure */}
           <div className="bg-white p-4 md:p-6 rounded-lg shadow-sm">
             <div className="flex items-center mb-4">
-              <img src="./src/assets/images/Structure-icon.png" alt="Structure Icon" className="w-10 md:w-12 h-10 md:h-12 mr-4" />
+              <img src={spec1} alt="Structure Icon" className="w-10 md:w-12 h-10 md:h-12 mr-4" />
               <h3 className="text-lg md:text-xl font-bold">Structure</h3>
             </div>
             <ul className="space-y-2">
@@ -22,7 +26,7 @@ const Specifications = () => {
           {/* Toilets */}
           <div className="bg-white p-4 md:p-6 rounded-lg shadow-sm">
             <div className="flex items-center mb-4">
-              <img src="./src/assets/images/Toilets-icon.png" alt="Toilets Icon" className="w-8 h-8 mr-4" />
+              <img src={spec2} alt="Toilets Icon" className="w-8 h-8 mr-4" />
               <h3 className="text-lg md:text-xl font-bold">Toilets</h3>
             </div>
             <ul className="space-y-2">
@@ -36,7 +40,7 @@ const Specifications = () => {
           {/* Flooring */}
           <div className="bg-white p-4 md:p-6 rounded-lg shadow-sm">
             <div className="flex items-center mb-4">
-              <img src="./src/assets/images/Flooring-icon.png" alt="Flooring Icon" className="w-8 h-8 mr-4" />
+              <img src={spec3} alt="Flooring Icon" className="w-8 h-8 mr-4" />
               <h3 className="text-lg md:text-xl font-bold">Flooring</h3>
             </div>
             <ul className="space-y-2">
@@ -48,7 +52,7 @@ const Specifications = () => {
           {/* Kitchen + Utility Area */}
           <div className="bg-white p-4 md:p-6 rounded-lg shadow-sm">
             <div className="flex items-center mb-4">
-              <img src="./src/assets/images/Kitchen-icon.png" alt="Kitchen Icon" className="w-8 h-8 mr-4" />
+              <img src={spec4} alt="Kitchen Icon" className="w-8 h-8 mr-4" />
               <h3 className="text-lg md:text-xl font-bold">Kitchen + Utility Area</h3>
             </div>
             <ul className="space-y-2">

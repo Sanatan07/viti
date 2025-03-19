@@ -1,17 +1,19 @@
 import React, { useState } from 'react';
 import './FloorPlan.css'; // Import your CSS file for styling
+import floor1 from '../../public/images/2bhkfloorplan.png';
+import floor2 from '../../public/images/3bhkfloorplan.png'
 
 const FloorPlan = () => {
   const [viewingImage, setViewingImage] = useState(null);
   
   const floorPlanImages = [
     {
-      src: './src/assets/images/2bhkfloorplan.png',
+      src: floor1,
       alt: '2 BHK Floor Plan',
       type: '2 BHK'
     },
     {
-      src: './src/assets/images/3bhkfloorplan.png',
+      src: floor2,
       alt: '3 BHK Floor Plan',
       type: '3 BHK'
     }
